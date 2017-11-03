@@ -1,0 +1,99 @@
+{
+  "ID": "do_IndexListView",
+  "IsContainer": "0",
+  "Type": "UI",
+  "Name": "带索引的ListView",
+  "Version": "Internal",
+  "Description": "带索引的ListView",
+  "Icon": "",
+  "IOS": {
+    "Support": 0,
+    "MinVersion": ""
+  },
+  "Android": {
+    "Support": 0,
+    "MinVersion": ""
+  },
+  "Windows": {
+    "Support": 0,
+    "MinVersion": ""
+  },
+  "WindowsPhone": {
+    "Support": 0,
+    "MinVersion": ""
+  },
+  "Html": {
+    "Support": 1,
+    "MinVersion": "5.0"
+  },
+  "Properties": [
+    {
+      "ID": "selectedColor",
+      "Name": "Cell选中的背景颜色",
+      "Type": "String",
+      "DefaultValue": "ffffff00",
+      "EditType": "0",
+      "Group": "",
+      "Description": "",
+      "Design": {
+        "Type": "Color",
+        "Data": []
+      }
+    },
+    {
+      "ID": "templates",
+      "Name": "Cell对应的模板UI文件组",
+      "Type": "String",
+      "DefaultValue": "",
+      "EditType": "0",
+      "Group": "",
+      "Description": "一个ListView可以有多个cell模板，这个属性是一个json array，每一个元素都是一个source ui文件。\\r\\n这个属性的格式类似如下：\\r\\n[\\\"source://view/cell1.ui\\\",\\\"source://view/cell2.ui\\\",\\\"source://view/cell3.ui]",
+      "Design": {
+        "Type": "Text",
+        "Data": []
+      }
+    }
+  ],
+  "Events": [
+    {
+      "ID": "longTouch",
+      "Description": "长按cell触发",
+      "ReturnType": "Number",
+      "ReturnDesc": "当前cell的position值"
+    },
+    {
+      "ID": "touch",
+      "Description": "点击cell触发",
+      "ReturnType": "Number",
+      "ReturnDesc": "当前cell的position值"
+    }
+  ],
+  "syncMethodes": [
+    {
+      "ID": "bindItems",
+      "Name": "绑定item的数据",
+      "Description": "可绑定hashDatad实例",
+      "ReturnType": "",
+      "ReturnDesc": "",
+      "Paras": [
+        {
+          "ID": "data",
+          "Name": "数据",
+          "Type": "Node",
+          "Required": 0,
+          "DefaultValue": "",
+          "Description": "比如{'A':[{'template':0,'text':'a1'},{'template':1,'text':'a2'}],'B':[{'template':0,'text':'b1'},{'template':1,'text':'b2'}]}"
+        }
+      ]
+    },
+    {
+      "ID": "refreshItems",
+      "Name": "刷新item数据",
+      "Description": "",
+      "ReturnType": "",
+      "ReturnDesc": "",
+      "Paras": []
+    }
+  ],
+  "asyncMethodes": []
+}

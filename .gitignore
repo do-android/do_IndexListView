@@ -1,0 +1,10 @@
+*.class
+*.apk
+bin/
+gen/
+.settings/
+proguard/
+*.classpath
+/doExt_do_IndexListView/libs/docore.jar
+/doExt_do_IndexListView/do_build.xml
+/doExt_do_IndexListView/do_IndexListView.zip
